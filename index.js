@@ -29,3 +29,4 @@ donate.addEventListener("click", function() {
 
 neverClick('.gaslight-exit')
 swapClick('#cancel', '#donate')
+goBack('#go-back')

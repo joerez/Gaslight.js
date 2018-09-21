@@ -1,3 +1,40 @@
 .gaslight-exit {
   transition: all 400ms;
 }
+
+@keyframes goBack {
+  from {
+    transform: translateX(0px);
+    border: solid 1px black;
+  }
+
+  30% {
+    transform: translateX(-2000px);
+  }
+
+  40% {
+    transform: translateX(-2000px) translateY(-5000px);
+  }
+
+  50% {
+    transform: translateX(2000px) translateY(-5000px);
+  }
+
+  60% {
+    transform: translateX(2000px) translateY(0px);
+  }
+
+  100% {
+    transform: translateX(0px) translateY(0px);
+    border: none;
+  }
+
+}
+
+.go-back {
+  animation-name: goBack;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
